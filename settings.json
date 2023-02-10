@@ -47,7 +47,7 @@
     {
       "before": ["j", "j"],
       "after": ["<Esc>"]
-    }
+    },
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
@@ -71,6 +71,38 @@
         "after":[";"]
     },
     {
+      "before": ["<C-d>"],
+      "after": ["<C-d>", "z", "z"]
+    },
+    {
+      "before": ["<C-u>"],
+      "after": ["<C-u>","z","z"]
+    },
+    {
+      "before": ["n"],
+      "after": ["n", "z", "z"]
+    },
+    {
+      "before": ["N"],
+      "after": ["N" ,"z", "z"]
+    },
+    {
+      "before" : ["<C-w>", "j"],
+      "after" : ["<C-w>", "h"]
+    },
+    {
+      "before" : ["<C-w>", "k"],
+      "after" : ["<C-w>", "j"]
+    },
+    {
+      "before" : ["<C-w>", "l"],
+      "after" : ["<C-w>", "k"]
+    },
+    {
+      "before" : ["<C-w>", ";"],
+      "after" : ["<C-w>", "l"]
+    },
+    {
       "before": ["<C-n>"],
       "commands": [":nohl"]
     },
@@ -86,6 +118,10 @@
     "<C-f>": false
 },
 "files.autoSave": "afterDelay",
-"editor.lineNumbers": "relative"
+"editor.lineNumbers": "relative",
+"editor.accessibilitySupport": "off",
+"[typescriptreact]": {
+  "editor.defaultFormatter": "vscode.typescript-language-features"
+}
 
 }
