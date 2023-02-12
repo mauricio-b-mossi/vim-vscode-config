@@ -1,74 +1,103 @@
 {
-    "workbench.colorTheme": "Default Dark+",
+  "workbench.colorTheme": "Default Dark+",
 
-    
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
-  "vim.operatorPendingModeKeyBindingsNonRecursive":[
+  "vim.operatorPendingModeKeyBindingsNonRecursive": [
     {
-      "before":["j"],
-      "after":["h"]
-  },
-  {
-      "before":["k"],
-      "after":["j"]
-  },
-  {
-      "before":["l"],
-      "after":["k"]
-  },
-  {
-      "before":[";"],
-      "after":["l"]
-  }
+      "before": ["j"],
+      "after": ["h"]
+    },
+    {
+      "before": ["k"],
+      "after": ["j"]
+    },
+    {
+      "before": ["l"],
+      "after": ["k"]
+    },
+    {
+      "before": [";"],
+      "after": ["l"]
+    }
   ],
-  "vim.visualModeKeyBindingsNonRecursive":[
+  "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "before":["j"],
-      "after":["h"]
-  },
-  {
-      "before":["k"],
-      "after":["j"]
-  },
-  {
-      "before":["l"],
-      "after":["k"]
-  },
-  {
-      "before":[";"],
-      "after":["l"]
-  }
+      "before": ["j"],
+      "after": ["h"]
+    },
+    {
+      "before": ["k"],
+      "after": ["j"]
+    },
+    {
+      "before": ["l"],
+      "after": ["k"]
+    },
+    {
+      "before": [";"],
+      "after": ["l"]
+    },
+    {
+    "before": ["ctrl+k"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["ctrl+l"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    }
   ],
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "j"],
       "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["u"],
+      "after": [],
+      "commands": [
+        {
+          "command": "undo",
+          "args": []
+        }
+      ]
     },
+    {
+      "before": ["<C-r>"],
+      "after": [],
+      "commands": [
+        {
+          "command": "redo",
+          "args": []
+        }
+      ]
+    }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-        "before":["j"],
-        "after":["h"]
+      "before": ["j"],
+      "after": ["h"]
     },
     {
-        "before":["k"],
-        "after":["j"]
+      "before": ["k"],
+      "after": ["j"]
     },
     {
-        "before":["l"],
-        "after":["k"]
+      "before": ["l"],
+      "after": ["k"]
     },
     {
-        "before":[";"],
-        "after":["l"]
+      "before": [";"],
+      "after": ["l"]
     },
     {
-        "before":["'"],
-        "after":[";"]
+      "before": ["'"],
+      "after": [";"]
     },
     {
       "before": ["<C-d>"],
@@ -76,7 +105,7 @@
     },
     {
       "before": ["<C-u>"],
-      "after": ["<C-u>","z","z"]
+      "after": ["<C-u>", "z", "z"]
     },
     {
       "before": ["n"],
@@ -84,23 +113,31 @@
     },
     {
       "before": ["N"],
-      "after": ["N" ,"z", "z"]
+      "after": ["N", "z", "z"]
     },
     {
-      "before" : ["<C-w>", "j"],
-      "after" : ["<C-w>", "h"]
+      "before": ["<C-w>", "j"],
+      "after": ["<C-w>", "h"]
     },
     {
-      "before" : ["<C-w>", "k"],
-      "after" : ["<C-w>", "j"]
+      "before": ["<C-w>", "k"],
+      "after": ["<C-w>", "j"]
     },
     {
-      "before" : ["<C-w>", "l"],
-      "after" : ["<C-w>", "k"]
+      "before": ["<C-w>", "l"],
+      "after": ["<C-w>", "k"]
     },
     {
-      "before" : ["<C-w>", ";"],
-      "after" : ["<C-w>", "l"]
+      "before": ["<C-w>", ";"],
+      "after": ["<C-w>", "l"]
+    },
+    {
+      "before": ["ctrl+k"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["ctrl+l"],
+      "commands": ["editor.action.moveLinesUpAction"]
     },
     {
       "before": ["<C-n>"],
@@ -116,12 +153,14 @@
   "vim.handleKeys": {
     "<C-a>": false,
     "<C-f>": false
-},
-"files.autoSave": "afterDelay",
-"editor.lineNumbers": "relative",
-"editor.accessibilitySupport": "off",
-"[typescriptreact]": {
-  "editor.defaultFormatter": "vscode.typescript-language-features"
-}
-
+  },
+  "files.autoSave": "afterDelay",
+  "editor.lineNumbers": "relative",
+  "editor.accessibilitySupport": "off",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true
 }
