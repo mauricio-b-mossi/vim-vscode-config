@@ -1,11 +1,14 @@
 {
-  "workbench.colorTheme": "Default Dark+",
+  "workbench.colorTheme": "Tomorrow Night Blue",
+  // "vim.vimrc.enable": true,
+  // "vim.vimrc.path": "C:\\Users\\mauri\\.vimrc",
 
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
+
   "vim.operatorPendingModeKeyBindingsNonRecursive": [
     {
       "before": ["j"],
@@ -41,8 +44,10 @@
       "before": [";"],
       "after": ["l"]
     },
+
+    // Move Block of Code up and Down.
     {
-    "before": ["ctrl+k"],
+      "before": ["ctrl+k"],
       "commands": ["editor.action.moveLinesDownAction"]
     },
     {
@@ -50,11 +55,17 @@
       "commands": ["editor.action.moveLinesUpAction"]
     }
   ],
+
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "j"],
       "after": ["<Esc>"]
-    }
+    },
+    {
+      "key": "ctrl+p",
+      "command": "editor.action.triggerParameterHints",
+      "when": "editorTextFocus"
+    },
   ],
   "vim.normalModeKeyBindings": [
     {
@@ -78,7 +89,36 @@
       ]
     }
   ],
+
   "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "key": "ctrl+p",
+      "command": "editor.action.triggerParameterHints",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "g d",
+      "command": "editor.action.revealDefinition",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "shift+k",
+      "command": "editor.action.showHover",
+      "when": "editorTextFocus"
+    },
+    // {
+    //   "before": ["ctrl+p"],
+    //   "command":["editor.action.triggerParameterHints"] 
+    // },
+    // {
+    //   "before": ["g d"],
+    //   "command": ["editor.action.revealDefinition"]
+    // },
+    // {
+    //   "before": ["shift+k"],
+    //   "command": ["editor.action.showHover"]
+    // },
+
     {
       "before": ["j"],
       "after": ["h"]
@@ -111,6 +151,8 @@
       "before": ["n"],
       "after": ["n", "z", "z"]
     },
+
+    // Window moving
     {
       "before": ["N"],
       "after": ["N", "z", "z"]
@@ -143,11 +185,6 @@
       "before": ["<C-n>"],
       "commands": [":nohl"]
     },
-    {
-      "before": ["K"],
-      "commands": ["lineBreakInsert"],
-      "silent": true
-    }
   ],
   "vim.leader": "<space>",
   "vim.handleKeys": {
@@ -162,5 +199,9 @@
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": true,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "[python]": {
+    "editor.formatOnType": true
+  }
 }

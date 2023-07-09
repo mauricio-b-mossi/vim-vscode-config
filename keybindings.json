@@ -1,0 +1,101 @@
+// Place your key bindings in this file to override the defaultsauto[]
+
+[
+  { "key": "ctrl+`", "command": "workbench.action.terminal.focus" },
+  // Toggle between terminal and editor focus
+  {
+    "command": "editor.action.formatDocument",
+    "key": "ctrl+alt+l",
+    "when": "editorTextFocus"
+  },
+  {
+    "command": "editor.action.quickFix",
+    "key": "alt+enter",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "workbench.action.quickOpen",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+=",
+    "command": "workbench.action.splitEditor",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+-",
+    "command": "workbench.action.splitEditorDown",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+;",
+    "command": "workbench.action.nextEditor",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+j",
+    "command": "workbench.action.previousEditor",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+;",
+    "command": "workbench.action.moveActiveEditorGroupRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "command": "workbench.action.moveActiveEditorGroupLeft",
+    "key": "shift+alt+j",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+q",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+5",
+    "command": "workbench.action.files.newFile",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+1",
+    "command": "workbench.view.explorer",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+k",
+    "command": "editor.action.showHover",
+    "when": "editorTextFocus"
+  },
+
+  {
+    "key": "ctrl+y",
+    "command": "-redo"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "acceptSelectedSuggestion",
+    "when": "acceptSuggestionOnEnter && suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+  },
+  {
+    "key": "ctrl+.",
+    "command": "acceptSelectedCodeAction",
+    "when": "codeActionMenuVisible"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "-extension.vim_ctrl+y",
+    "when": "editorTextFocus && vim.active && vim.use<C-y> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "editor.action.triggerParameterHints",
+    "when": "editorTextFocus"
+  }
+]
