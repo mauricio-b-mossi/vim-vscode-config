@@ -1,7 +1,9 @@
 // Place your key bindings in this file to override the defaultsauto[]
-
 [
-  { "key": "ctrl+`", "command": "workbench.action.terminal.focus" },
+  {
+    "key": "ctrl+`",
+    "command": "workbench.action.terminal.focus"
+  },
   // Toggle between terminal and editor focus
   {
     "command": "editor.action.formatDocument",
@@ -73,7 +75,6 @@
     "command": "editor.action.showHover",
     "when": "editorTextFocus"
   },
-
   {
     "key": "ctrl+y",
     "command": "-redo"
@@ -96,6 +97,44 @@
   {
     "key": "ctrl+p",
     "command": "editor.action.triggerParameterHints",
-    "when": "editorTextFocus"
+    "when": "editorTextFocus && !suggestWidgetHasFocusedSuggestion && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+alt+l",
+    "command": "editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "list.focusUp",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "list.focusDown",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpen",
+    "when": "!listFocus"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-workbench.action.files.newUntitledFile"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "problems.action.open",
+    "when": "problemFocus"
+  },
+  {
+    "key": "f2",
+    "command": "workbench.actions.view.problems",
+    "when": "workbench.panel.markers.view.active"
   }
 ]
