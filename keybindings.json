@@ -1,9 +1,7 @@
 // Place your key bindings in this file to override the defaultsauto[]
+
 [
-  {
-    "key": "ctrl+`",
-    "command": "workbench.action.terminal.focus"
-  },
+  { "key": "ctrl+`", "command": "workbench.action.terminal.focus" },
   // Toggle between terminal and editor focus
   {
     "command": "editor.action.formatDocument",
@@ -75,6 +73,7 @@
     "command": "editor.action.showHover",
     "when": "editorTextFocus"
   },
+
   {
     "key": "ctrl+y",
     "command": "-redo"
@@ -168,7 +167,7 @@
     "when": "listFocus && !inputFocus"
   },
   {
-    "key": "y",
+    "key": "ctrl+y",
     "command": "list.select",
     "when": "listFocus && !inputFocus"
   },
